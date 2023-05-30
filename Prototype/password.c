@@ -7,8 +7,9 @@ int main() {
     char username[MAX];
     char password[MAX];
     char usr[16] = "Panda", pass[11] = "Who-cares";
-
-    printf("Welcome to Repo stack prototype\n");
+    printf("\n*******************************\n");
+    printf("\nWelcome to Repo stack prototype\n");
+    printf("\n*******************************\n");
     printf("Enter your username: ");
     scanf("%s", username);
 
