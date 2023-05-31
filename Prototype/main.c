@@ -64,7 +64,6 @@ void read_dat(){
     //reads the file
     while (fread(&panda, sizeof(hooman), 1, fp) == 1) {
         if ((strcmp(panda.name,name) == 0) && (panda.id==id)) {
-            // Match found, process the struct data
             printf("Name: %s\n", panda.name);
             printf("Age: %d\n", panda.age);
             printf("Id: %d\n", panda.id);
