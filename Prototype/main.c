@@ -87,6 +87,8 @@ void read_dat() {
     }
     fclose(fp);
 }
+
+
 //Edits the patient data
 void edit_pat(){
 
