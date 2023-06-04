@@ -14,6 +14,27 @@ typedef struct {
     char Medic_hist[vmax];
 } hooman;
 
+//Checks password
+int check_pass(){
+    char username[max];
+    char password[max];
+    char usr[16] = "Panda", pass[11] = "Who-cares";
+    printf("\n*******************************\n");
+    printf("\nWelcome to Repo stack prototype\n");
+    printf("\n*******************************\n");
+    printf("Enter your username: ");
+    scanf("%s", username);
+
+    printf("Enter your password: ");
+    scanf("%s", password);
+
+    if (strcmp(username, usr) == 0 && strcmp(password, pass) == 0) {
+        return 1;
+    } else {
+        return 0;
+    }
+}
+
 //Adding the patient
 void add_pat() {
     hooman panda;
@@ -26,7 +47,7 @@ void add_pat() {
     }
 
     printf("Enter name of the patient: ");
-    scanf("%s", panda.name);
+    scanf(" %[^\n]", panda.name);
 
     printf("Enter id of the patient: ");
     scanf("%d", &panda.id);
@@ -53,6 +74,7 @@ void add_pat() {
 
     fwrite(&panda, sizeof(hooman), 1, fp);
     fclose(fp);
+    system("clear");
 }
 
 //Reads the patient data
@@ -88,54 +110,41 @@ void read_dat() {
     fclose(fp);
 }
 
-
-//Edits the patient data
-void edit_pat(){
-
-    char name[max];
-    int id;
-    FILE* fp;
-
-    scanf(" %[^\n]",name);
-    scanf("%d",&id);
-
-    fp = fopen("patient_record.bin","rb+");
-
-}
-
 int main() {
-    int valid = system("./password");
-
-    system("clear");
-    if (valid == 0) {
-        printf("Invalid password/username\n");
-        system("./password");
-    }
-    else {
-        printf("Login successful \n");
-
-        while (1) {
-            printf("Choose an option\n");
-            printf("1) Add patient\n2) Edit existing patient\n3) Read data\n4) Exit\n");
-            int choice;
-            scanf("%d",&choice);
-
-            switch (choice) {
-                case 1:
-                    system("clear");
-                    add_pat();
-                    break;
-                case 3:
-                    system("clear");
-                    read_dat();
-                    break;
-                default:
-                    break;
-            }
-            if (choice == 4) {
-                break;
-            }
+    while(1){
+        int valid = check_pass();
+        if(valid == 1){
+            system("clear");
+            printf("*******************\n");
+            printf("*Login successfull*\n");
+            printf("*******************\n");
+            break;
+        }else{
+            system("clear");
+            printf("Invalid Username/ password \n");
         }
     }
-    
+    while (1) {
+
+        printf("Choose an option\n");
+        printf("1) Add patient\n2) Edit existing patient\n3) Read data\n4) Exit\n");
+        int choice;
+        scanf("%d",&choice);
+
+        switch (choice) {
+            case 1:
+                system("clear");
+                add_pat();
+                break;
+            case 3:
+                system("clear");
+                read_dat();
+                break;
+            default:
+                break;
+        }
+        if (choice == 4) {
+            break;
+        }
+    }    
 }
