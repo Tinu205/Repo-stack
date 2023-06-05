@@ -1,6 +1,6 @@
-///////////////////////////////////////////
-//////////won't use this next time////////
-//////////////////////////////////////////
+//I wont use this anymore
+
+/*
 #include <stdio.h>
 #include <string.h>
 
@@ -27,3 +27,4 @@ int main() {
 
     return 0;
 }
+*/
