@@ -2,7 +2,7 @@
 This is a concept we have selected for evision a kind of hackathon for freshers in our college
 This is a simple prototype of a patient record management system implemented in C. The program allows users to add patient information, read patient data, and exit the system. It includes a basic login system to ensure authorized access to the system.
 
-Features
+# Features
 The program provides the following features:
 
 Login System: Users are required to enter a username and password to access the system. The default username is "Panda" and the default password is "Who-cares". The login credentials can be modified by changing the values of the usr and pass variables in the check_pass() function.
