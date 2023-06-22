@@ -17,7 +17,7 @@ Users can search for and read patient data by entering the patient's name and ID
 ## Exit:
 Users can choose to exit the system, which will terminate the program.
 
-Usage
+## Usage
 Compilation: Compile the C program using a C compiler, such as GCC, with the following command:
 
 Copy code
