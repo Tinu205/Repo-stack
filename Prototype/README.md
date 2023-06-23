@@ -20,7 +20,7 @@ Users can choose to exit the system, which will terminate the program.
 ## Usage
 Compilation: Compile the C program using a C compiler, such as GCC, with the following command:
 
-Copy code
+## Copy code
 gcc patient_record.c -o patient_record
 Execution: Run the compiled program using the following command:
 
