@@ -27,7 +27,8 @@ Execution: Run the compiled program using the following command:
 bash
 Copy code
 ./patient_record
-Login: Enter the username and password when prompted. The default username is "Panda" and the default password is "Who-cares".
+### Login:
+Enter the username and password when prompted. The default username is "Panda" and the default password is "Who-cares".
 
 Main Menu: After successful login, the program will display a menu with the following options:
 
