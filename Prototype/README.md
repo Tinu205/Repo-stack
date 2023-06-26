@@ -30,7 +30,8 @@ Copy code
 ### Login:
 Enter the username and password when prompted. The default username is "Panda" and the default password is "Who-cares".
 
-Main Menu: After successful login, the program will display a menu with the following options:
+### Main Menu: 
+After successful login, the program will display a menu with the following options:
 
 Add patient: Enter option 1 to add patient information. Follow the prompts to enter the patient's details.
 Read data: Enter option 3 to search for and read patient data. Enter the patient's name and ID when prompted.
