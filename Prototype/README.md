@@ -37,7 +37,8 @@ After successful login, the program will display a menu with the following optio
 Enter option 1 to add patient information. Follow the prompts to enter the patient's details.
 ### Read data:
 Enter option 3 to search for and read patient data. Enter the patient's name and ID when prompted.
-Exit: Enter any other number to exit the program.
+### Exit:
+Enter any other number to exit the program.
 File Storage
 The patient data is stored in a binary file named "patient_record.bin". Each patient's information is stored as a structure of type hooman defined in the program. The structure contains the following fields:
 
