@@ -8,7 +8,7 @@ The program provides the following features:
 ### Login System: 
 Users are required to enter a username and password to access the system. The default username is "Panda" and the default password is "Who-cares". The login credentials can be modified by changing the values of the usr and pass variables in the check_pass() function.
 
-## Add Patient:
+### Add Patient:
 Users can add patient information, including name, ID, age, doctor's name, and medical history. The patient data is stored in a binary file named "patient_record.bin". The program checks if a patient with the same ID already exists before adding a new patient.
 
 ## Read Patient Data: 
