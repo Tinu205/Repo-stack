@@ -14,7 +14,7 @@ Users can add patient information, including name, ID, age, doctor's name, and m
 ### Read Patient Data: 
 Users can search for and read patient data by entering the patient's name and ID. The program reads the patient records from the "patient_record.bin" file and displays the matching patient's information.
 
-## Exit:
+### Exit:
 Users can choose to exit the system, which will terminate the program.
 
 ## Usage
